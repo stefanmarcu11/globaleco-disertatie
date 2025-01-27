@@ -1,0 +1,160 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding-top: 2rem;
+  text-align: center;
+  background-color: #d1d6d0;
+}
+
+.main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  height: 350px;
+  width: 350px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #199112aa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.save-planet {
+  height: 350px;
+  width: 450px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.description-section {
+  margin-top: 20px;
+  background-image: url('./assets/images/eco-planet-v1.png');
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 320px;
+}
+
+.text-section {
+  display: flex;
+  padding: 20px 10px 0px 10px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.multiple-card {
+  padding-top: 30px;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+.footer {
+  color: white;
+  padding-top: 30px;
+  margin-top: 30px;
+  background-color: rgb(105, 147, 98);
+}
+.row {
+  padding: 0px 30px 30px 30px;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+.column.side h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  margin-top: 10px
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+.details-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.facebook-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.facebook-icon:hover {
+  color: coral;
+}
+.column-side-right {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    width: 100%;
+  }
+  .description-section {
+    width: 100%;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #aed9c0;
+}
