@@ -1,7 +1,7 @@
-import { SiFacebook, SiGithub, SiLinkedin, SiX } from 'react-icons/si'
-import phone from '../assets/images/call.png'
-import address from '../assets/images/location.png'
-import mail from '../assets/images/mail.png'
+import { SiFacebook } from 'react-icons/si'
+import phone from '../../assets/images/call.png'
+import address from '../../assets/images/location.png'
+import mail from '../../assets/images/mail.png'
 
 export const Block = () => {
   return (
@@ -23,6 +23,13 @@ export const Block = () => {
       </div>
 
       <div className="column middle">
+        <div>
+          <h2 className='hover-underline-animation'>Our mission</h2>
+          <p>
+          GLOBALECO’s mission is to actively contribute to a cleaner and healthier environment through proper waste management and the promotion of recycling.
+          The company is committed to using sustainable methods to reduce pollution and optimize collection and transportation processes.
+          </p>
+        </div>
       </div>
 
       <div className="column side">
@@ -34,9 +41,3 @@ export const Block = () => {
     </div>
   )
 }
-
-const socialLinks = [
-  { href: 'https://x.com', icon: <SiX /> },
-  { href: 'https://github.com', icon: <SiGithub /> },
-  { href: 'https://www.linkedin.com', icon: <SiLinkedin /> },
-]

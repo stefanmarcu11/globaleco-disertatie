@@ -1,0 +1,128 @@
+/* Modal Container */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #205c3b;
+}
+
+/* Form Title */
+.form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #205c3b;
+    margin-bottom: 20px;
+}
+
+/* Form Grid */
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Add spacing between fields */
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Buttons */
+.form-submit {
+    display: flex;
+    justify-content: flex-end;
+    /* Align buttons to the right */
+    gap: 10px;
+    /* Add spacing between buttons */
+}
+
+.form-cancel-button {
+    padding: 10px 20px;
+    background-color: coral;
+    /* Red color for cancel button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-cancel-button:hover {
+    background-color: chocolate;
+    /* Darker red on hover */
+}
+
+.form-confirm-button {
+    padding: 10px 20px;
+    background-color: #199112aa;
+    /* Green color for confirm button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-confirm-button:hover {
+    background-color: rgb(105, 147, 98);
+    /* Darker green on hover */
+}
+
+.form-group.invalid select,
+.form-group.invalid input {
+    border: 2px solid red;
+}
+
+.form-group.invalid label {
+    color: red;
+}
