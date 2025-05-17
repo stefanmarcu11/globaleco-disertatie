@@ -1,0 +1,208 @@
+.registration-page {
+  display: flex;
+  height: 100vh;
+}
+
+.registration-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Section */
+.registration-left {
+  width: 650px;
+  display: flex;
+  background-color: #e8f5e9;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #c8e6c9;
+}
+
+.branding {
+  text-align: center;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.branding-title {
+  font-size: 1.8rem;
+  color: #2e7d32;
+  /* Dark green */
+  margin-bottom: 10px;
+}
+
+.branding-description {
+  font-size: 1rem;
+  color: #4caf50;
+  /* Medium green */
+  margin-bottom: 20px;
+}
+
+/* Right Section */
+.registration-right {
+  width: 600px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.registration-form {
+  width: 80%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #757575;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.password-hint {
+  font-size: 0.8rem;
+  color: #bdbdbd;
+  margin-top: 5px;
+}
+
+.form-button-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-button-primary:hover {
+  background-color: #388e3c;
+}
+
+.form-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #757575;
+  margin-top: 10px;
+}
+
+.form-footer a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.get-started {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.get-started-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.get-started-subtitle {
+  font-size: 1rem;
+  color: #757575;
+}
+
+.get-started-subtitle a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.get-started-subtitle a:hover {
+  text-decoration: underline;
+}
+
+/* Password Strength Indicator */
+.password-strength {
+  display: flex;
+  margin-top: 8px;
+}
+
+.strength-bar {
+  flex: 1;
+  height: 6px;
+  background-color: #ccc;
+  /* Default gray color */
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+.strength-bar.active {
+  background-color: #ffc107;
+  /* Yellow for active bars */
+}
+
+.password-hint {
+  font-size: 0.9rem;
+  color: #757575;
+  /* Gray color */
+  margin-top: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Secondary Button */
+.form-button-secondary {
+  background-color: transparent;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.form-button-secondary:hover {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  transform: scale(1.02);
+}

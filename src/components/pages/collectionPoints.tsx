@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../pages/styleCss/collectionPoints.css";
 import PickupAndPack from "../common/components/pickupForm";
 import CollectionPointDetails from "../common/components/collectionPointDetails";
+import { Block } from "../common/footer";
+import { Copyright } from "../common/copyright";
 
 type Review = {
   user: string;
@@ -216,6 +218,18 @@ const CollectionPointsPage: React.FC = () => {
   const [selectedPoint, setSelectedPoint] = useState<CollectionPoint | null>(
     null
   );
+
+  const isLoggedIn = false; // Change this to true if the user is logged in
+
+  const handleLogin = () => {
+    console.log("Redirecting to login...");
+    // Add your login redirection logic here
+  };
+
+  const handleSignUp = () => {
+    console.log("Redirecting to sign up...");
+    // Add your sign-up redirection logic here
+  };
 
   const handleAddReview = (review: Review) => {
     if (selectedPoint) {
@@ -500,8 +514,16 @@ const CollectionPointsPage: React.FC = () => {
           address={selectedPoint.address}
           reviews={selectedPoint.reviews}
           onAddReview={handleAddReview}
+          isLoggedIn={isLoggedIn}
+          onLogin={handleLogin}
+          onSignUp={handleSignUp}
         />
       )}
+      <div className="footer">
+        <Block></Block>
+        <hr className="line"></hr>
+        <Copyright></Copyright>
+      </div>
     </div>
   );
 };
